@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelloMusic - 感受此刻美好</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/zhheo/HeoMusic@main/css/APlayer.min.css">
+  <link rel="stylesheet" type="text/css" href="http://music.hovthen.com/css/main.css">
+  <link rel="icon" type="image/x-icon" href="http://music.hovthen.com/img/icon.svg">
+  <link rel="apple-touch-icon" href="http://music.hovthen.com/img/icon.webp">
+  <meta name="apple-mobile-web-app-title" content="音乐">
+  <link rel="bookmark" href="http://music.hovthen.com/img/icon.webp">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="http://music.hovthen.com/img/icon.webp">
+  <meta name="description" content="一个简单好用的音乐播放器。">
+  <link rel="manifest" href="http://music.hovthen.com/manifest.json">
+</head>
+
+<body>
+  <div id="music_bg"></div>
+  <div id="heoMusic-page">
+  </div>
+  <script>
+    var meting_api = 'http://api.hovthen.com/lib/music/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r';
+    var userId = "0";
+
+    // 播放列表的服务商
+    // netease（网易云音乐）
+    // tencent（腾讯）
+    // kugou（酷狗）
+    // xiami（小米音乐）
+    // baidu（百度音乐）
+    var userServer = "hello";
+
+    // 播放列表的类型
+    // song（单曲）
+    // playlist（歌单，默认）
+    // album（专辑）
+    // search（搜索结果）
+    // artist（歌手）
+    var userType = "playlist";
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+  <script async data-pjax src="http://music.hovthen.com/js/main.js"></script>
+</body>
+
+</html>
